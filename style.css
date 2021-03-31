@@ -1,5 +1,6 @@
 /* Basic Style */
 
+
 * {
     box-sizing: border-box;
   }
@@ -91,7 +92,7 @@
     display: block;
     margin: 0 0 20px;
   }
-  input#new-task {
+  #new-task {
     width: 318px;
   }
   p > button:hover {
@@ -120,21 +121,21 @@
   li >    input[type="text"] {
     width: 226px
   }
-  li > button.delete:hover {
+  li > .delete:hover {
     color: #cf2323;
   }
-  button.delete img {
+  .delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
     margin-right: 9px;
   }
-  button.delete img:hover {
+  .delete img:hover {
     transform: rotateZ(0);
   }
   
   /* Completed */
-  ul#completed label {
+  #completed .task {
     text-decoration: line-through
     color: #888;
   }
@@ -144,11 +145,11 @@
     display:none
   }
   
-  ul li.edit-mode input[type=text] {
+  .edit-mode input[type=text] {
     display:inline-block;
     width:224px
   }
   
-  ul li.edit-mode label {
+  .edit-mode label {
     display:none;
   }
