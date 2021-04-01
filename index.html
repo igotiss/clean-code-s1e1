@@ -6,48 +6,48 @@
     <link rel="stylesheet" href="style.css" media="screen">
   </head>
   <body>
-    <header class="matrix">
-      <figure class="matrix-pic-wrap">
-        <img src="./eisenhower-matrix.jpg" alt="Eisenhower-matrix" class="matrix-pic">
+    <header class="header">
+      <figure class="header__matrix">
+        <img src="./eisenhower-matrix.jpg" alt="Eisenhower-matrix" class="header__matrix__pic">
       </figure>
-      <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">
+      <a class="header__more-info" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
     </header>
     <main class="main">
-      <section id="add-item">
-        <h3 class="title">Add Item</h3>
-        <input id="new-task" class="text-input" type="text">
-        <button class="btn">Add</button>
+      <section id="add-item" class="app app_add-item">
+        <h3 class="app__title">Add Item</h3>
+        <input id="new-task" class="app__input_text" type="text">
+        <button class="app__btn">Add</button>
       </section>
-      <section class="todo">
-        <h3 class="title">Todo</h3>
-        <ul id="todo" class="list">
-          <li class="list-item">
-            <input type="checkbox" class="checkbox">
-            <label class="task task-label">Pay Bills</label>
-            <input type="text" class="text-input">
-            <button class="edit btn">Edit</button>
-            <button class="delete btn"><img class="delete-icon" src="./remove.svg" alt="Remove button"></button>
+      <section class="app app_todo">
+        <h3 class="app__title">Todo</h3>
+        <ul id="todo" class="app__list">
+          <li class="app__list-item">
+            <input type="checkbox" class="app__input_checkbox">
+            <label class="app__task app__task_name">Pay Bills</label>
+            <input type="text" class="app__input_text">
+            <button class="app__btn app__btn_edit">Edit</button>
+            <button class="app__btn app__btn_delete"><img class="app__btn_delete__icon" src="./remove.svg" alt="Remove button"></button>
           </li>
-          <li class="list-item edit-mode">
-            <input type="checkbox"  class="checkbox">
-            <label class="task task-label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="text-input task">
-            <button class="edit btn">Save</button>
-            <button class="delete btn"><img class="delete-icon" src="./remove.svg" alt="Remove button"></button>
+          <li class="app__list-item app__edit-mode">
+            <input type="checkbox"  class="app__input_checkbox">
+            <label class="app__task app__task_name">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="app__input_text">
+            <button class="app__btn app__btn_edit">Save</button>
+            <button class="app__btn app__btn_delete"><img class="app__btn_delete__icon" src="./remove.svg" alt="Remove button"></button>
           </li>
         </ul>
       </section>
-      <section class="completed">
-        <h3 class="title">Completed</h3>
-        <ul id="completed" class="list">
-          <li class="list-item">
-            <input type="checkbox" class="checkbox" checked>
-            <label class="task task-label">See the Doctor</label>
-            <input type="text" class="text-input">
-            <button class="edit btn">Edit</button>
-            <button class="delete btn"><img class="delete-icon" src="./remove.svg" alt="Remove button"></button>
+      <section class="app app_completed">
+        <h3 class="app__title">Completed</h3>
+        <ul id="completed" class="app__list">
+          <li class="app__list-item">
+            <input type="checkbox" class="app__input_checkbox" checked>
+            <label class="app__task app__task_name">See the Doctor</label>
+            <input type="text" class="app__input_text">
+            <button class="app__btn app__btn_edit">Edit</button>
+            <button class="app__btn app__btn_delete"><img class="app__btn_delete__icon" src="./remove.svg" alt="Remove button"></button>
           </li>
         </ul>
       </section>
